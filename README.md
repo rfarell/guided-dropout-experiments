@@ -85,7 +85,7 @@ Where:
 ### 3. Signal-to-Noise Ratio (SNR)
 
 The SNR for node $j$ is calculated as:
-$\text{SNR}_{j} = \frac{\mu_j}{\sigma_j + \epsilon}$
+$${SNR}_{j} = \frac{\mu_j}{\sigma_j + \epsilon}$$
 
 Where:
 - $\mu_j$ is the mean activation of node $j$.
