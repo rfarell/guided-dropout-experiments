@@ -65,40 +65,35 @@ We measure the signal strength of each node in the first hidden layer using the 
 
 ### 1. Mean Activation
 
-The mean activation of node `j` is calculated as:
+The mean activation of node $j$ is calculated as:
 
-```
-Mean Activation_j = (1/N) * Σ [a_j^(1)(x_i)] for i = 1 to N
-```
+$$
+{Mean Activation}_{j} = \frac{1}{N} \sum_{i=1}^{N} a_{j}^{(1)}(x_i)
+$$
 
 Where:
-- `N` is the number of samples in the dataset.
-- `a_j^(1)(x_i)` is the activation of node `j` for input sample `x_i`.
+- $N$ is the number of samples in the dataset.
+- $a_{j}^{(1)}(x_i)$ is the activation of node $j$ for input sample $x_i$.
 
 ### 2. Variance of Activations
 
-The variance of activations for node `j` is calculated as:
+The variance of activations for node $j$ is calculated as:
 
-```
-Variance_j = (1/N) * Σ [(a_j^(1)(x_i) - μ_j)^2] for i = 1 to N
-```
+$${Variance}_{j} = \frac{1}{N} \sum_{i=1}^{N} \left( a_{j}^{(1)}(x_i) - \mu_j \right)^2$$
 
 Where:
-- `μ_j` is the mean activation of node `j`.
+- $\mu_j$ is the mean activation of node $j$.
 
 ### 3. Signal-to-Noise Ratio (SNR)
 
-The SNR for node `j` is calculated as:
+The SNR for node $j$ is calculated as:
 
-```
-SNR_j = μ_j / (σ_j + ε)
-```
+$${SNR}_{j} = \frac{\mu_j}{\sigma_j + \epsilon}$$
 
 Where:
-- `μ_j` is the mean activation of node `j`.
-- `σ_j = sqrt(Variance_j)` is the standard deviation of node `j`'s activations.
-- `ε` is a small constant added to prevent division by zero.
-```
+- $\mu_j$ is the mean activation of node $j$.
+- $\sigma_j = \sqrt{\text{Variance}_{j}}$ is the standard deviation of node $j$'s activations.
+- $\epsilon$ is a small constant added to prevent division by zero.
 
 ## Results
 
