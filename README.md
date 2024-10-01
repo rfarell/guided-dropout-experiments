@@ -77,10 +77,7 @@ Where:
 ### 2. Variance of Activations
 
 The variance of activations for node $j$ is calculated as:
-
-$$
-\text{Variance}_{j} = \frac{1}{N} \sum_{i=1}^{N} \left( a_{j}^{(1)}(x_i) - \mu_j \right)^2
-$$
+$\text{Variance}_{j} = \frac{1}{N} \sum_{i=1}^{N} \left( a_{j}^{(1)}(x_i) - \mu_j \right)^2$
 
 Where:
 - $\mu_j$ is the mean activation of node $j$.
@@ -88,8 +85,7 @@ Where:
 ### 3. Signal-to-Noise Ratio (SNR)
 
 The SNR for node $j$ is calculated as:
-
-$$\text{SNR}_{j} = \frac{\mu_j}{\sigma_j + \epsilon}$$
+$\text{SNR}_{j} = \frac{\mu_j}{\sigma_j + \epsilon}$
 
 Where:
 - $\mu_j$ is the mean activation of node $j$.
