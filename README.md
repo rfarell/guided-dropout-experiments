@@ -66,7 +66,6 @@ We measure the signal strength of each node in the first hidden layer using the 
 ### 1. Mean Activation
 
 The mean activation of node $j$ is calculated as:
-
 $$
 {Mean Activation}_{j} = \frac{1}{N} \sum_{i=1}^{N} a_{j}^{(1)}(x_i)
 $$
@@ -189,6 +188,6 @@ These plots help in understanding how Guided Dropout affects the activation patt
 
 
 ## Plots
-![](plots/mean_activation_strengths.png)
-![](plots/signal-to-noise_ratio_(snr)_strengths.png)
-![](plots/variance_of_activations_strengths.png)
+![](./plots/mean_activation_strengths.png)
+![](./plots/signal-to-noise_ratio_(snr)_strengths.png)
+![](./plots/variance_of_activations_strengths.png)
