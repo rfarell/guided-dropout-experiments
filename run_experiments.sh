@@ -17,15 +17,15 @@ pip install -r requirements.txt
 
 # Train Guided Dropout Model
 echo "Training Guided Dropout Model..."
-python train.py --model guided --epochs 2
+python train.py --model guided --epochs 50
 
 # Train Regular Dropout Model
 echo "Training Regular Dropout Model..."
-python train.py --model regular --epochs 2
+python train.py --model regular --epochs 50
 
 # Train No Dropout Model
 echo "Training No Dropout Model..."
-python train.py --model none --epochs 2
+python train.py --model none --epochs 50
 
 # Step 4: Visualize activation strengths
 echo "Visualizing activation strengths..."
